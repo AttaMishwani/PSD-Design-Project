@@ -20,7 +20,24 @@
       rel="stylesheet"
     />
 
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+      integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="swipertwo.css" />
   </head>
   <body>
     <main>
@@ -51,32 +68,32 @@
                   <a href=""
                     ><img
                       class="nav-social-links"
-                      src="images/facebook.png"
+                      src="images/facebook (1).webp"
                       alt=""
                   /></a>
                   <a href=""
                     ><img
                       class="nav-social-links"
-                      src="images/instagram.png"
+                      src="images/instagram.webp"
                       alt=""
                   /></a>
                   <a href=""
                     ><img
                       class="nav-social-links"
-                      src="images/twitter.png"
+                      src="images/twitter (1).webp"
                       alt=""
                   /></a>
                   <a href=""
                     ><img
                       class="nav-social-links"
-                      src="images/linkedin.png"
+                      src="images/linkedin (1).webp"
                       alt=""
                   /></a>
                 </div>
               </div>
             </div>
             <div class="lower">
-              <ul>
+              <ul id="lower-menu">
                 <li><a href="" class="nav-link">HOME</a></li>
                 <li>
                   <a href="" class="nav-link">HISTORY</a>
@@ -97,9 +114,198 @@
               </ul>
             </div>
           </div>
+          <div class="toggle-btn">
+            <img class="button" src="images/menuOne.png" alt="" />
+          </div>
         </nav>
       </header>
-      <!-- NAVBAR -->
+
+      <!-- HOME -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="images/slider-1 (1).jpg" style="width: 100%" />
+          <p class="slide-text">
+            Kati organized a ceremony in honor of SSP hyderabad Amjad shiekh PSP
+            on receiving tamgha e shujaat from government of pakistan
+            <button>View Events</button>
+          </p>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/slider-1 (1).jpg" style="width: 100%" />
+          <p class="slide-text">
+            Kati organized a ceremony in honor of SSP hyderabad Amjad shiekh PSP
+            on receiving tamgha e shujaat from government of pakistan
+            <button>View Events</button>
+          </p>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/slider-1 (1).jpg" style="width: 100%" />
+          <p class="slide-text">
+            Kati organized a ceremony in honor of SSP hyderabad Amjad shiekh PSP
+            on receiving tamgha e shujaat from government of pakistan
+            <button>View Events</button>
+          </p>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+      </div>
+
+      <!-- The dots/circles -->
+      <div style="text-align: center" class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <div class="about-content">
+          <div class="about-left">
+            <h1 class="about-heading kati">The Kati</h1>
+            <p class="about-desc">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using ‘Content here,
+              content here’, making it look like readable English. Many desktop
+              publishing packages and web page editors now use Lorem Ipsum as
+              their default model text, and a search for ‘lorem ipsum’ will
+              uncover many web sites still in their infancy. Various versions
+              have evolved over the years, sometimes by accident, sometimes on
+              purpose (injected humour and the like).
+            </p>
+            <button class="about-btn">Read More</button>
+          </div>
+          <div class="about-right">
+            <h1 class="about-heading videos">Videos</h1>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/xuP4g7IDgDM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDER -->
+
+      <section class="slider-section">
+        <h1 class="about-heading slider-heading">Events and Meetings</h1>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" width="100px">
+              <img src="images/event-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/event-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/event-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/event-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/event-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/event-3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-column">
+          <h4>CONTACT US</h4>
+          <ul>
+            <li>
+              <a href="#"
+                >Plot No. F/24, S.I.T.E., Kotri, Distt Jamshoro, Sindh</a
+              >
+            </li>
+            <li><a href="#">Phone: 022-654984</a></li>
+            <li><a href="#">Email: info@kati.org.pk </a></li>
+            <div class="footer-social-links">
+              <a href=""
+                ><img
+                  class="footer-link"
+                  src="images/facebook (1).webp"
+                  alt="" /></a
+              ><a href=""
+                ><img
+                  class="footer-link"
+                  src="images/linkedin (1).webp"
+                  alt="" /></a
+              ><a href=""
+                ><img
+                  class="footer-link"
+                  src="images/instagram.webp"
+                  alt="" /></a
+              ><a href=""
+                ><img class="footer-link" src="images/twitter (1).webp" alt=""
+              /></a>
+            </div>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>ABOUT KATI</h4>
+          <ul>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Exec committee</a></li>
+            <li><a href="#">Management</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>MEMBERS AREA</h4>
+          <ul>
+            <li><a href="#">Members</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Office Bearers</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>NEWS UPDATE</h4>
+          <ul>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Meeting</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>CONTACTS</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Complain and Feedback</a></li>
+          </ul>
+        </div>
+      </footer>
+      <div class="footer-bottom">
+        Copyright © 2023 Kotri Association All rights reserved. | Website Design
+        by UMW Media
+      </div>
     </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="swiperTwo.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
