@@ -716,13 +716,24 @@ header {
   .swiper-slide {
     margin-left: 0px;
   }
-  .footer {
-    grid-template-columns: 1fr;
-    text-align: left;
-  }
   .about-heading {
     font-size: 27px;
   }
+  .footer-column h4 {
+
+    margin-bottom: 0px;
+}
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: 0;
+  }
+
+  .footer-column {
+    padding: 5px 20px 0px;
+   
+}
+  .
 }
 @media screen and (max-width: 480px) {
   .dot {
