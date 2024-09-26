@@ -58,6 +58,7 @@ header {
 .menu {
   width: 100%;
   margin-left: 20px;
+  border-left: 1px solid #d4c9c9;
 }
 /* MENU UPPER */
 
@@ -159,6 +160,9 @@ header {
   transition: 0.2s ease;
 }
 
+.menu .menu-lower ul a.active {
+  color: white;
+}
 .menu .menu-lower ul a:hover {
   background-color: #323f69;
   color: white;
@@ -308,7 +312,6 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 85px 0;
 }
 .about-content,
 .swiper-slide {
@@ -322,7 +325,8 @@ header {
 }
 .about-content {
   width: 80%;
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
+  height: fit-content;
 }
 .about-content .about-right {
   width: 50%;
@@ -398,6 +402,7 @@ header {
 .swiper-slide img {
   display: block;
   width: 100%;
+  user-select: none;
   height: 100%;
   object-fit: cover;
   border: 1.5px solid #fff;
@@ -497,15 +502,15 @@ header {
   border-top: 1px solid #d4c9c9;
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .navbar {
     width: 98%;
   }
-}
+} */
 
 @media (max-width: 1199px) {
   .navbar {
-    width: 99%;
+    width: 90%;
   }
 }
 @media (max-width: 1024px) {
@@ -799,7 +804,9 @@ header {
     bottom: 16%;
     left: 14px;
   }
-
+  /* .about-content .about-left {
+    margin-bottom: 4rem;
+  } */
   .mySlides img {
     width: auto;
   }
@@ -813,6 +820,10 @@ header {
     height: 20px;
     left: -33px;
     top: 10px;
+  }
+
+  .about-content .about-left {
+    margin-bottom: 4rem;
   }
 
   .swiper-slide {
@@ -866,7 +877,7 @@ header {
     line-height: 32px;
     width: 98%;
     bottom: 13%;
-    left: 2px;
+    left: 4px;
   }
   .slide-text button {
     width: 138px;
