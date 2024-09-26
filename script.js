@@ -1,18 +1,20 @@
 // script.js
 let toggleBtn = document.querySelector(".toggle-btn");
-let lowerMenu = document.getElementById("lower-menu");
+let lowerMenu = document.querySelector(".menu-lower");
 let toggleButtonIcon = document.querySelector(".toggle-btn .button");
 
 toggleBtn.addEventListener("click", () => {
   console.log("working");
-  if (lowerMenu.className !== "active") {
+
+  // Toggle the 'active' class
+  if (!lowerMenu.classList.contains("active")) {
     lowerMenu.classList.add("active");
-    toggleButtonIcon.src = "images/xmarktwo.png";
-    console.log("class added");
+    toggleButtonIcon.src = "images/xmarktwo.png"; // Change to cross icon when active
+    console.log("class added, menu opened");
   } else {
     lowerMenu.classList.remove("active");
-    toggleButtonIcon.src = "images/menuOne.png";
-    console.log("class removed");
+    toggleButtonIcon.src = "images/menuOne.png"; // Change back to menu icon when closed
+    console.log("class removed, menu closed");
   }
 });
 
