@@ -18,19 +18,19 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 
-var swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
-  direction: getDirection(),
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  on: {
-    resize: function () {
-      swiper.changeDirection(getDirection());
-    },
-  },
-});
+// var firstSwiper = new Swiper(".swiper", {
+//   slidesPerView: 3,
+//   direction: getDirection(),
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   on: {
+//     resize: function () {
+//       swiper.changeDirection(getDirection());
+//     },
+//   },
+// });
 
 function getDirection() {
   var windowWidth = window.innerWidth;
@@ -82,3 +82,35 @@ function showSlides(n) {
     ease: "power2.out",
   });
 }
+
+// SLIDER SECTION
+const swiper = new Swiper(".slider-wrapper", {
+  loop: true,
+  grabCurosr: true,
+  spaceBetween: 30,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
